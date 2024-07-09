@@ -23,7 +23,7 @@ const AboutMe = () => {
           I am a passionate Full Stack Developer with 1+ years of experience.
         </p>
         <blockquote className="italic text-gray-600 text-center">
-          "The only way to do great work is to love what you do." - Steve Jobs
+          "When something is important enough, you do it even if the odds are not in your favor." - Elon Musk
         </blockquote>
       </div>
 
