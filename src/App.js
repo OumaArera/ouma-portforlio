@@ -1,63 +1,37 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
-import Projects from './Projects'; // Import Projects component
+import Projects from './Projects';
 import Header from './Header';
 import Footer from './Footer';
 
 const App = () => {
-  const [showAboutMe, setShowAboutMe] = useState(false);
-  const [showSkills, setShowSkills] = useState(false);
-  const [showProjects, setShowProjects] = useState(false); // State for Projects component
-
-  const handleToggleAboutMe = () => {
-    setShowAboutMe((prevShowAboutMe) => !prevShowAboutMe);
-    setShowSkills(false); // Close Skills if AboutMe is toggled
-    setShowProjects(false); // Close Projects if AboutMe is toggled
-  };
-
-  const handleToggleSkills = () => {
-    setShowSkills((prevShowSkills) => !prevShowSkills);
-    setShowAboutMe(false); // Close AboutMe if Skills is toggled
-    setShowProjects(false); // Close Projects if Skills is toggled
-  };
-
-  const handleToggleProjects = () => {
-    setShowProjects((prevShowProjects) => !prevShowProjects);
-    setShowAboutMe(false); // Close AboutMe if Projects is toggled
-    setShowSkills(false); // Close Skills if Projects is toggled
-  };
-
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow flex flex-col items-center justify-center p-4">
-        <div className="flex space-x-4 mb-6">
-          <button
-            className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full"
-            onClick={handleToggleAboutMe}
-          >
-            About Me
-          </button>
-          <button
-            className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full"
-            onClick={handleToggleSkills}
-          >
-            Skills
-          </button>
-          <button
-            className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full"
-            onClick={handleToggleProjects}
-          >
-            Projects
-          </button>
-        </div>
-        {showAboutMe && <AboutMe />}
-        {showSkills && <Skills />}
-        {showProjects && <Projects />}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow flex flex-col items-center justify-center p-4">
+          <div className="flex space-x-4 mb-6">
+            <Link to="/" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+              About Me
+            </Link>
+            <Link to="/skills" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+              Skills
+            </Link>
+            <Link to="/projects" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+              Projects
+            </Link>
+          </div>
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
