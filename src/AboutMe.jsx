@@ -1,5 +1,6 @@
 import React from 'react';
-import OumaCV from "./OumaCV.pdf";
+import OumaCV from './OumaCV.pdf';
+import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const AboutMe = () => {
   const handleEmailClick = (event) => {
@@ -50,17 +51,17 @@ const AboutMe = () => {
       {/* Contact Information Section */}
       <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-6 w-full">
         <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4 text-center">Contact Information</h2>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center">
-          Phone: <span className="text-blue-600 hover:underline">+254748-800-714</span>
+        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+          <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254748-800-714</span>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center">
-          Email: <a href="mailto:johnouma999@gmail.com" onClick={handleEmailClick} className="text-blue-600 hover:underline">johnouma999@gmail.com</a>
+        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+          <FaEnvelope className="mr-2" /> <a href="mailto:johnouma999@gmail.com" onClick={handleEmailClick} className="text-blue-600 hover:underline">johnouma999@gmail.com</a>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center">
-          GitHub: <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">github.com/OumaArera</a>
+        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+          <FaGithub className="mr-2" /> <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">github.com/OumaArera</a>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center">
-          LinkedIn: <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
+        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+          <FaLinkedin className="mr-2" /> <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
         </p>
       </div>
 
