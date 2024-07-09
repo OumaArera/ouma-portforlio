@@ -13,17 +13,17 @@ const App = () => {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow flex flex-col items-center justify-center p-4">
-          <div className="flex space-x-4 mb-6">
-            <Link to="/" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+          <div className="w-full flex flex-wrap justify-center mb-6 space-x-0 space-y-2 sm:space-y-0 sm:space-x-4">
+            <Link to="/" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
               About Me
             </Link>
-            <Link to="/skills" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+            <Link to="/skills" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
               Skills
             </Link>
-            <Link to="/projects" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+            <Link to="/projects" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
               Projects
             </Link>
-            <Link to="/services" className="text-white bg-gray-900 hover:bg-blue-900 px-6 py-2 rounded-full">
+            <Link to="/services" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
               Services
             </Link>
           </div>
