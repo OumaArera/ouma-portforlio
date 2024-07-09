@@ -1,10 +1,9 @@
 import React from 'react';
 import portrait from "./portrait.jpg"
 
-
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4 bg-gray-900 text-white">
+    <header className="flex items-center justify-center p-4 bg-gray-900 text-white">
       <div className="flex items-center">
         <img 
           src={portrait}
