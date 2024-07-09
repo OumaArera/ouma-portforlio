@@ -55,10 +55,13 @@ const AboutMe = () => {
           <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254748-800-714</span>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+          <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254753-472-960</span>
+        </p>
+        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
           <FaEnvelope className="mr-2" /> <a href="mailto:johnouma999@gmail.com" onClick={handleEmailClick} className="text-blue-600 hover:underline">johnouma999@gmail.com</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
-          <FaGithub className="mr-2" /> <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">github.com/OumaArera</a>
+          <FaGithub className="mr-2" /> <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
           <FaLinkedin className="mr-2" /> <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
