@@ -4,6 +4,7 @@ import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
 import Services from './Services';
+import Clients from './Clients'; // Import Clients component
 import Header from './Header';
 import Footer from './Footer';
 
@@ -14,17 +15,35 @@ const App = () => {
         <Header />
         <main className="flex-grow flex flex-col items-center justify-center p-4">
           <div className="w-full flex flex-wrap justify-center mb-6 space-x-0 space-y-2 sm:space-y-0 sm:space-x-4">
-            <Link to="/" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
-              About Me
+            <Link 
+              to="/" 
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+            >
+              Profile
             </Link>
-            <Link to="/skills" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
+            <Link 
+              to="/skills" 
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+            >
               Skills
             </Link>
-            <Link to="/projects" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
+            <Link 
+              to="/projects" 
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+            >
               Projects
             </Link>
-            <Link to="/services" className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 rounded-full sm:px-6 sm:py-2">
+            <Link 
+              to="/services" 
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+            >
               Services
+            </Link>
+            <Link 
+              to="/clients" 
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+            >
+              Clients
             </Link>
           </div>
           <Routes>
@@ -32,6 +51,7 @@ const App = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/clients" element={<Clients />} /> {/* Add route for Clients */}
           </Routes>
         </main>
         <Footer />
