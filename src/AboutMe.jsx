@@ -47,19 +47,24 @@ const AboutMe = () => {
       <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
         <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4">Contact Information</h2>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
-          <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254748-800-714</span>
+          <FaPhone className="mr-2" /> 
+          <a href="tel:+254748800714" className="text-blue-600 hover:underline">+254748-800-714</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
-          <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254753-472-960</span>
+          <FaPhone className="mr-2" /> 
+          <a href="https://wa.me/254753472960" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">+254753-472-960</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
-          <FaEnvelope className="mr-2" /> <a href="mailto:johnouma999@gmail.com" onClick={handleEmailClick} className="text-blue-600 hover:underline">johnouma999@gmail.com</a>
+          <FaEnvelope className="mr-2" /> 
+          <a href="mailto:johnouma999@gmail.com" onClick={handleEmailClick} className="text-blue-600 hover:underline">johnouma999@gmail.com</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
-          <FaGithub className="mr-2" /> <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub</a>
+          <FaGithub className="mr-2" /> 
+          <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
-          <FaLinkedin className="mr-2" /> <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
+          <FaLinkedin className="mr-2" /> 
+          <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
         </p>
       </div>
 
