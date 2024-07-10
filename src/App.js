@@ -17,31 +17,31 @@ const App = () => {
           <div className="w-full flex flex-wrap justify-center mb-6 space-x-0 space-y-2 sm:space-y-0 sm:space-x-4">
             <Link 
               to="/" 
-              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px] h-[40px]"
             >
               Profile
             </Link>
             <Link 
               to="/skills" 
-              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px] h-[40px]"
             >
               Skills
             </Link>
             <Link 
               to="/projects" 
-              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px] h-[40px]"
             >
               Projects
             </Link>
             <Link 
               to="/services" 
-              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px] h-[40px]"
             >
               Services
             </Link>
             <Link 
               to="/clients" 
-              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px]"
+              className="text-white bg-gray-900 hover:bg-blue-900 px-4 py-2 sm:px-6 sm:py-2 rounded-full flex items-center justify-center min-h-[40px] h-[40px]"
             >
               Clients
             </Link>
