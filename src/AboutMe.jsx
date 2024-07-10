@@ -1,6 +1,6 @@
 import React from 'react';
 import OumaCV from './OumaCV.pdf';
-import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const AboutMe = () => {
   const handleEmailClick = (event) => {
@@ -51,7 +51,7 @@ const AboutMe = () => {
           <a href="tel:+254748800714" className="text-blue-600 hover:underline">+254748-800-714</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
-          <FaPhone className="mr-2" /> 
+          <FaWhatsapp className="mr-2" /> 
           <a href="https://wa.me/254753472960" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">+254753-472-960</a>
         </p>
         <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
