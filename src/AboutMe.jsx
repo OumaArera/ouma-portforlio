@@ -11,66 +11,61 @@ const AboutMe = () => {
   return (
     <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg w-full max-w-6xl">
       {/* Introduction Section */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-6 w-full">
-        <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2 text-center">
-          Hey! My name is <span className="font-bold">John Ouma</span> but I prefer you call me{' '}
-          <span className="font-bold">Arera</span>
-        </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center">
-          I am a Kenyan, living in Nairobi.
+      <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-blue-500">
+        <h1 className="text-3xl md:text-4xl font-extrabold mb-2 text-blue-700">Hello, I'm <span className="underline">John Ouma</span></h1>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-800">A Passionate Full Stack Developer</h2>
+        <p className="text-lg md:text-xl mb-2 text-gray-600">
+          Based in Nairobi, Kenya with over a year of experience.
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center">
-          I am a passionate Full Stack Developer with 1+ years of experience.
+        <p className="text-lg md:text-xl italic text-gray-600">
+          "Turning ideas into reality, one line of code at a time."
         </p>
-        <blockquote className="italic text-gray-600 text-center">
-          "When something is important enough, you do it even if the odds are not in your favor." - Elon Musk
-        </blockquote>
       </div>
 
       {/* Education Section */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-6 w-full">
-        <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4 text-center">Education</h2>
-        <div className="text-lg md:text-xl text-gray-700 mb-2 text-center">
+      <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
+        <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4">Education</h2>
+        <div className="text-lg md:text-xl text-gray-700 mb-2">
           <p className="font-bold">Moringa School</p>
           <p>Software Development, 2023-2024</p>
         </div>
-        <div className="text-lg md:text-xl text-gray-700 mb-2 text-center">
+        <div className="text-lg md:text-xl text-gray-700 mb-2">
           <p className="font-bold">freeCodeCamp</p>
           <p>Java and Python, 2023</p>
         </div>
-        <div className="text-lg md:text-xl text-gray-700 mb-2 text-center">
+        <div className="text-lg md:text-xl text-gray-700 mb-2">
           <p className="font-bold">edX</p>
           <p>Introduction to AI, 2024</p>
         </div>
-        <div className="text-lg md:text-xl text-gray-700 mb-2 text-center">
+        <div className="text-lg md:text-xl text-gray-700 mb-2">
           <p className="font-bold">Udemy</p>
           <p>Java, Containerization, Deployment, and Microservices, 2024</p>
         </div>
       </div>
 
       {/* Contact Information Section */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-6 w-full">
-        <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4 text-center">Contact Information</h2>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+      <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
+        <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4">Contact Information</h2>
+        <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
           <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254748-800-714</span>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+        <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
           <FaPhone className="mr-2" /> <span className="text-blue-600 hover:underline">+254753-472-960</span>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+        <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
           <FaEnvelope className="mr-2" /> <a href="mailto:johnouma999@gmail.com" onClick={handleEmailClick} className="text-blue-600 hover:underline">johnouma999@gmail.com</a>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+        <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
           <FaGithub className="mr-2" /> <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub</a>
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-2 text-center flex items-center justify-center">
+        <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
           <FaLinkedin className="mr-2" /> <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
         </p>
       </div>
 
       {/* Resume Section */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md w-full">
-        <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4 text-center">Resume</h2>
+      <div className="bg-white p-6 rounded-lg shadow-md w-full text-center border-t-4 border-gray-300">
+        <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4">Resume</h2>
         <div className="flex justify-center">
           <a
             href={OumaCV}
