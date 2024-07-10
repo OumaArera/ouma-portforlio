@@ -7,7 +7,7 @@ const Clients = () => {
       name: 'Eliakim Naya',
       business: 'Motor Vehicle Dealer',
       solution: 'The app was designed to streamline vehicle inventory management and improve the customer purchase experience.',
-      technologies: ['React', 'Apring Boot', 'Postgresql'],
+      technologies: ['React', 'Spring Boot', 'Postgresql'],
       websiteUrl: 'https://ouma-portforlio.vercel.app/',
       imageUrl: naya,
     }
