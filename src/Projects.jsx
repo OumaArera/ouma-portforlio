@@ -2,14 +2,14 @@ import React from 'react';
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg">
+    <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg w-full max-w-6xl">
       <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">Projects</h1>
 
       {/* Container for all project cards */}
-      <div className="w-full max-w-4xl space-y-6">
-
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full">
+        
         {/* Merch Mate Project Card */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
           <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-2">Merch Mate</h2>
           <p className="text-lg md:text-xl text-gray-700 mb-4">
             A web application for managing merchandisers with user roles like admin, manager, and merchandiser. It includes KPI management and role-based access control.
@@ -30,7 +30,7 @@ const Projects = () => {
         </div>
 
         {/* Sanaa Yetu Project Card */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
           <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-2">Sanaa Yetu</h2>
           <p className="text-lg md:text-xl text-gray-700 mb-4">
             An online shopping platform that empowers artisans to sell their products to a global audience with real-time transactions.
@@ -47,7 +47,7 @@ const Projects = () => {
         </div>
 
         {/* Maestro Travels Project Card */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
           <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-2">Maestro Travels</h2>
           <p className="text-lg md:text-xl text-gray-700 mb-4">
             A web application that helps tourists locate destinations within Kenya, providing information about tour guides and facilities.
@@ -63,7 +63,7 @@ const Projects = () => {
         </div>
 
         {/* Foursils Academy Project Card */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300">
           <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-2">Foursils Academy</h2>
           <p className="text-lg md:text-xl text-gray-700 mb-4">
             An online learning platform where students can enroll in courses and instructors can create and manage courses.
