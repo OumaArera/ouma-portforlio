@@ -54,7 +54,7 @@ const services = [
   {
     icon: faServer,
     title: 'Backend',
-    description: 'Developing server-side applications and APIs using frameworks like Node.js, Django, etc.',
+    description: 'Developing server-side applications and APIs using frameworks like Node.js, Spring, Spring Boot, Flask, Django, etc.',
   },
   {
     icon: faDatabase,
