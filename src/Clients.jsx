@@ -1,4 +1,3 @@
-// Clients.js
 import React from 'react';
 import naya from "./naya.png"
 
