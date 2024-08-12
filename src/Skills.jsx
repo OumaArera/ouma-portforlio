@@ -34,6 +34,8 @@ const Skills = () => {
             <li>Flask</li>
             <li>Spring</li>
             <li>Spring Boot</li>
+            <li>NodeJS</li>
+            <li>ExpressJS</li>
             <li>Laravel</li>
           </ul>
         </div>
