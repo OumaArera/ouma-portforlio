@@ -40,6 +40,7 @@ const AboutMe = () => {
       >
         Get in Touch
       </button>
+      <br />
 
       {/* Conditional Contact Information Section */}
       {showContact && (
