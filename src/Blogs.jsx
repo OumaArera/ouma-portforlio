@@ -110,7 +110,7 @@ const Blogs = () => {
                   className="mt-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white py-2 px-4 rounded hover:scale-105 transform transition duration-300"
                   onClick={() => handleReadClick(blog)}
                 >
-                  Read
+                  View..
                 </button>
               </div>
             ))}
