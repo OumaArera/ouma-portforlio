@@ -71,7 +71,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-4 bg-white border border-green-500 rounded-lg shadow-lg p-6 space-y-6">
+          <div className="md:hidden absolute top-20 right-4 bg-white border border-green-500 rounded-lg shadow-lg p-6 space-y-6">
             <Link to="/" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
               Home
             </Link>
@@ -93,12 +93,6 @@ const Header = () => {
             <Link to="/services" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
               Services
             </Link>
-            <button 
-              className="w-full text-gray-600 text-sm mt-4 focus:outline-none"
-              onClick={toggleMenu}
-            >
-              Close
-            </button>
           </div>
         )}
       </header>
