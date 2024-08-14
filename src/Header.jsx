@@ -10,99 +10,97 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <header className="flex items-center justify-between p-6 bg-white text-gray-900 shadow-lg fixed top-0 w-full z-10 border-b-4 border-green-500">
-        <div className="flex items-center">
-          <img 
-            src={portrait}
-            alt="John Ouma" 
-            className="w-12 h-12 rounded-full mr-4 border-2 border-green-500 shadow-lg"
-          />
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">John Ouma</h1>
-            <p className="text-lg text-gray-600">Full Stack Software Engineer</p>
-          </div>
+    <header className="flex flex-col md:flex-row items-center justify-between p-6 bg-white text-gray-900 shadow-lg fixed top-0 left-0 w-full z-10 border-b-4 border-green-500">
+      <div className="flex items-center w-full md:w-auto">
+        <img 
+          src={portrait}
+          alt="John Ouma" 
+          className="w-12 h-12 rounded-full mr-4 border-2 border-green-500 shadow-lg"
+        />
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">John Ouma</h1>
+          <p className="text-lg text-gray-600">Full Stack Software Engineer</p>
         </div>
+      </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex space-x-6 mt-4 md:mt-0">
+        <Link to="/" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          Home
+        </Link>
+        <Link to="/about" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          About
+        </Link>
+        <Link to="/blogs" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          Blogs
+        </Link>
+        <Link to="/skills" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          Skills
+        </Link>
+        <Link to="/projects" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          Projects
+        </Link>
+        <Link to="/clients" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          Clients
+        </Link>
+        <Link to="/services" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          Services
+        </Link>
+      </nav>
+
+      {/* Mobile Menu Button */}
+      <div className="md:hidden flex items-center mt-4 md:mt-0">
+        <button onClick={toggleMenu} className="focus:outline-none">
+          <svg 
+            className="w-8 h-8 text-gray-900" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth="2" 
+              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} 
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-white border border-green-500 rounded-lg shadow-lg p-6 space-y-6">
+          <Link to="/" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             Home
           </Link>
-          <Link to="/about" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          <Link to="/about" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             About
           </Link>
-          <Link to="/blogs" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          <Link to="/blogs" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             Blogs
           </Link>
-          <Link to="/skills" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          <Link to="/skills" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             Skills
           </Link>
-          <Link to="/projects" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          <Link to="/projects" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             Projects
           </Link>
-          <Link to="/clients" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          <Link to="/clients" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             Clients
           </Link>
-          <Link to="/services" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          <Link to="/services" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
             Services
           </Link>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none">
-            <svg 
-              className="w-8 h-8 text-gray-900" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth="2" 
-                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} 
-              />
-            </svg>
+          <button 
+            className="w-full text-gray-600 text-sm mt-4 focus:outline-none"
+            onClick={toggleMenu}
+          >
+            Close
           </button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-4 bg-white border border-green-500 rounded-lg shadow-lg p-6 space-y-6">
-            <Link to="/" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              Home
-            </Link>
-            <Link to="/about" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              About
-            </Link>
-            <Link to="/blogs" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              Blogs
-            </Link>
-            <Link to="/skills" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              Skills
-            </Link>
-            <Link to="/projects" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              Projects
-            </Link>
-            <Link to="/clients" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              Clients
-            </Link>
-            <Link to="/services" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
-              Services
-            </Link>
-            <button 
-              className="w-full text-gray-600 text-sm mt-4 focus:outline-none"
-              onClick={toggleMenu}
-            >
-              Close
-            </button>
-          </div>
-        )}
-      </header>
-    </div>
+      )}
+    </header>
   );
 };
 
