@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaArrowLeft, FaShareAlt } from 'react-icons/fa'; // Import icons
 
 const blogsData = [
   // Example blog entries
@@ -72,28 +73,27 @@ const Blogs = () => {
           <ul className="mb-4">
             {selectedBlog.references.map((ref, index) => (
               <li key={index}>
-                <a href={ref} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{ref}</a>
+                <a href={ref} target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline">{ref}</a>
               </li>
             ))}
           </ul>
-          <button
-            className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
-            onClick={() => setSelectedBlog(null)}
-          >
-            Back to Blogs
-          </button>
-          <button
-            className="ml-2 mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
-            onClick={handleShareClick}
-          >
-            Share
-          </button>
+          <div className="flex space-x-2">
+            <button
+              className="mt-4 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white py-2 px-4 rounded hover:scale-105 transform transition duration-300 flex items-center"
+              onClick={() => setSelectedBlog(null)}
+            >
+              <FaArrowLeft className="mr-2" /> Back to Blogs
+            </button>
+            <button
+              className="mt-4 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white py-2 px-4 rounded hover:scale-105 transform transition duration-300 flex items-center"
+              onClick={handleShareClick}
+            >
+              <FaShareAlt className="mr-2" /> Share
+            </button>
+          </div>
         </div>
       ) : (
         <>
-          <br />
-          <br />
-          {/* <br /> */}
           <input
             type="text"
             placeholder="Search blogs..."
@@ -107,7 +107,7 @@ const Blogs = () => {
                 <h2 className="text-xl font-bold">{blog.title}</h2>
                 <p>{blog.description}</p>
                 <button
-                  className="mt-2 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+                  className="mt-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white py-2 px-4 rounded hover:scale-105 transform transition duration-300"
                   onClick={() => handleReadClick(blog)}
                 >
                   Read
@@ -119,7 +119,7 @@ const Blogs = () => {
             <button
               disabled={currentPage === 1}
               onClick={() => handlePageChange(currentPage - 1)}
-              className="bg-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-400"
+              className="bg-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-400 disabled:opacity-50"
             >
               Previous
             </button>
@@ -127,7 +127,7 @@ const Blogs = () => {
             <button
               disabled={currentPage * blogsPerPage >= filteredBlogs.length}
               onClick={() => handlePageChange(currentPage + 1)}
-              className="bg-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-400"
+              className="bg-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-400 disabled:opacity-50"
             >
               Next
             </button>
