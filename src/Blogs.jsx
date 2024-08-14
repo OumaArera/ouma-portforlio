@@ -83,7 +83,7 @@ const Blogs = () => {
             Back to Blogs
           </button>
           <button
-            className="ml-2 mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700"
+            className="ml-2 mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
             onClick={handleShareClick}
           >
             Share
