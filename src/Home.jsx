@@ -5,7 +5,7 @@ import background from "./perfect2.avif";
 const Home = () => {
   return (
     <div 
-      className="relative flex flex-col items-center justify-center h-screen text-center text-white"
+      className="relative flex flex-col items-center justify-center h-screen z-10 text-center text-white"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',

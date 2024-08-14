@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="flex items-center justify-between p-6 bg-white text-gray-900 shadow-lg fixed top-0 w-full z-10 border-b-4 border-green-500">
+      <header className="flex items-center justify-between p-6 bg-white text-gray-900 shadow-lg fixed top-0 w-full z-50 border-b-4 border-green-500">
         <div className="flex items-center">
           <img 
             src={portrait}
