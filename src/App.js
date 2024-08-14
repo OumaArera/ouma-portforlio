@@ -16,8 +16,8 @@ const App = () => {
     <Router>
       <Header className="fixed top-0 left-0 w-full z-50" />
       
-      <div className="flex flex-col min-h-screen">
-        <main className="flex-grow flex flex-col overflow-y-auto pt-[60px]">
+      <div className="flex flex-col min-h-screen pt-16 md:pt-24">
+        <main className="flex-grow flex flex-col overflow-y-auto px-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
@@ -29,7 +29,7 @@ const App = () => {
             <Route path="/blogs" element={<Blogs />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer className="pt-4" />
       </div>
     </Router>
   );
