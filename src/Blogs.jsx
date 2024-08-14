@@ -42,6 +42,20 @@ const Blogs = () => {
     setCurrentPage(page);
   };
 
+  const handleShareClick = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: selectedBlog.title,
+        text: selectedBlog.description,
+        url: window.location.href + `#${selectedBlog.id}`,
+      })
+      .then(() => console.log('Blog shared successfully'))
+      .catch((error) => console.error('Error sharing blog:', error));
+    } else {
+      alert('Sharing is not supported in this browser.');
+    }
+  };
+
   return (
     <div className="p-4">
       {selectedBlog ? (
@@ -70,16 +84,16 @@ const Blogs = () => {
           </button>
           <button
             className="ml-2 mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-            onClick={() => alert("Share functionality to be implemented")}
+            onClick={handleShareClick}
           >
             Share
           </button>
         </div>
       ) : (
         <>
-        <br />
-        <br />
-        {/* <br /> */}
+          <br />
+          <br />
+          {/* <br /> */}
           <input
             type="text"
             placeholder="Search blogs..."
