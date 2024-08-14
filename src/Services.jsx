@@ -51,7 +51,8 @@ const services = [
 const Services = () => {
   return (
     <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg w-full max-w-6xl">
-      <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">Tailored software solutions</h2>
+      <br />
+      <h2 className="text-2xl md:text-3xl font-semibold text-green-800 mb-6 text-center">Tailored software solutions</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
         {services.map((service) => (
           <div key={service.id} className="relative bg-gray-100 p-6 rounded-lg shadow-md mb-6 w-full text-center border-t-4 border-gray-300 transition-transform transform hover:scale-105">

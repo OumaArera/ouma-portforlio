@@ -3,6 +3,7 @@ import React from 'react';
 const Skills = () => {
   return (
     <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto shadow-lg rounded-lg w-full max-w-6xl bg-white">
+      <br />
       <h1 className="text-2xl md:text-3xl font-semibold text-green-900 mb-6 text-center">Core Skills and Competencies</h1>
       
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full bg-white bg-opacity-80 p-6 rounded-lg">
