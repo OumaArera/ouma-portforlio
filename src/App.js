@@ -15,6 +15,8 @@ const App = () => {
   return (
     <Router>
       <Header className="fixed top-0 left-0 w-full z-50" />
+      <br />
+      <br />
       
       <div className="flex flex-col min-h-screen pt-16 md:pt-24">
         <main className="flex-grow flex flex-col overflow-y-auto px-4">
