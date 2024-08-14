@@ -23,6 +23,7 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     }
 
+    // Cleanup event listener on component unmount
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -90,26 +91,57 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div ref={menuRef} className="md:hidden absolute top-20 right-4 bg-white border border-green-500 rounded-lg shadow-lg p-6 space-y-6">
-            <Link to="/" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+          <div 
+            ref={menuRef} 
+            className="md:hidden absolute top-20 right-4 bg-white border border-green-500 rounded-lg shadow-lg p-6 space-y-6"
+          >
+            <Link 
+              to="/" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               Home
             </Link>
-            <Link to="/about" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+            <Link 
+              to="/about" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               About
             </Link>
-            <Link to="/blogs" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+            <Link 
+              to="/blogs" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               Blogs
             </Link>
-            <Link to="/skills" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+            <Link 
+              to="/skills" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               Skills
             </Link>
-            <Link to="/projects" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+            <Link 
+              to="/projects" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               Projects
             </Link>
-            <Link to="/clients" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+            <Link 
+              to="/clients" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               Clients
             </Link>
-            <Link to="/services" className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" onClick={toggleMenu}>
+            <Link 
+              to="/services" 
+              className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
+              onClick={toggleMenu}
+            >
               Services
             </Link>
           </div>
