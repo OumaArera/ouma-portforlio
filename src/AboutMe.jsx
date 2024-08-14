@@ -19,7 +19,7 @@ const AboutMe = () => {
     <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg w-full max-w-6xl">
       {/* Introduction Section */}
       <div className="flex flex-col md:flex-row items-center justify-center mb-6 w-full">
-        <div className="text-center md:text-left md:w-1/2">
+        <div className="text-center md:text-left md:w-1/2 order-2 md:order-1">
           <h1 className="text-3xl md:text-4xl font-extrabold mb-2 text-green-700">Who I Am</h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-800">
             Your Trusted Software Partner
@@ -27,17 +27,19 @@ const AboutMe = () => {
           <p className="text-lg md:text-xl mb-2 text-gray-600">
             I am a passionate full-stack software developer dedicated to transforming your ideas into robust digital solutions. Based in Nairobi, I leverage the latest technologies to create innovative applications that drive success. My expertise spans frontend and backend development, ensuring seamless user experiences and powerful functionality. Let's collaborate to elevate your business and achieve your goals together!
           </p>
-          <button
-            onClick={handleGetInTouchClick}
-            className="mt-6 px-6 py-3 bg-green-500 text-white rounded-full text-lg hover:bg-green-600"
-          >
-            Get in Touch
-          </button>
         </div>
-        <div className="mt-6 md:mt-0 md:w-1/2">
+        <div className="mt-6 md:mt-0 md:w-1/2 order-1 md:order-2">
           <img src={expertise} alt="Expertise" className="w-full rounded-lg shadow-md" />
         </div>
       </div>
+
+      {/* Get in Touch Button */}
+      <button
+        onClick={handleGetInTouchClick}
+        className="mt-6 px-6 py-3 bg-green-500 text-white rounded-full text-lg hover:bg-green-600"
+      >
+        Get in Touch
+      </button>
 
       {/* Conditional Contact Information Section */}
       {showContact && (
