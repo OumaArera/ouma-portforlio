@@ -78,6 +78,8 @@ const Blogs = () => {
       ) : (
         <>
         <br />
+        <br />
+        {/* <br /> */}
           <input
             type="text"
             placeholder="Search blogs..."
