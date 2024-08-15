@@ -57,6 +57,7 @@ const ServiceDetail = () => {
 
   return (
     <div className="flex flex-col items-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg w-full max-w-6xl">
+      <br />
       <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6 text-center">{service.title}</h2>
       <img 
         src={service.image} 
