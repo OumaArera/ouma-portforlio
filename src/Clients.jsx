@@ -4,12 +4,12 @@ import insight from "./insight.png";
 const Clients = () => {
   const clientDetails = [
     {
-      name: 'Insight Wellbeing P/L',
+      name: 'Serenity Pathways',
       location: "Harare, Zimbabwe",
       business: 'Psychotherapy Clinic',
       solution: 'The app connects patients with Insight Wellbeing P/L online, allowing doctors to monitor activities, provide prescriptions, and ensure data encryption for secure patient access.',
       technologies: ['React', 'Flask', 'Postgresql'],
-      websiteUrl: 'https://insight-wellbeing.vercel.app/',
+      websiteUrl: 'https://serenity-sandy.vercel.app/',
       imageUrl: insight,
     }
   ];

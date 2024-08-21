@@ -2,7 +2,7 @@ import React from 'react';
 
 const projects = [
   {
-    title: "Insight Wellbeing P/L",
+    title: "Serenity Pathways",
     description: "A web application for managing psychotherapy services with roles for admin, doctor, and patient, including features for activity monitoring and secure data access.",
     technologies: [
       "Frontend: React, JavaScript, Tailwind CSS, Figma",
@@ -10,7 +10,7 @@ const projects = [
       "Database: PostgreSQL",
       "Security: JWT Tokens"
     ],
-    liveSite: "https://insight-wellbeing.vercel.app/"
+    liveSite: "https://serenity-sandy.vercel.app/"
   },
   {
     title: "Merch Mate",
