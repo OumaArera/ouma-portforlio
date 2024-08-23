@@ -8,7 +8,7 @@ const Clients = () => {
       name: 'Serenity Pathways',
       location: "Harare, Zimbabwe",
       business: 'Psychotherapy Clinic',
-      solution: 'The app connects patients with Insight Wellbeing P/L online, allowing doctors to monitor activities, provide prescriptions, and ensure data encryption for secure patient access.',
+      solution: 'The app connects patients with Serenity Pathways online, allowing doctors to monitor activities, provide prescriptions, and ensure data encryption for secure patient access.',
       technologies: ['React', 'NodeJS', 'Postgresql'],
       websiteUrl: 'https://serenity-sandy.vercel.app/',
       imageUrl: insight,
