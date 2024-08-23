@@ -6,7 +6,7 @@ const projects = [
     description: "A web application for managing psychotherapy services with roles for admin, doctor, and patient, including features for activity monitoring and secure data access.",
     technologies: [
       "Frontend: React, JavaScript, Tailwind CSS, Figma",
-      "Backend: Flask, Python",
+      "Backend: NodeJS, Python",
       "Database: PostgreSQL",
       "Security: JWT Tokens"
     ],
