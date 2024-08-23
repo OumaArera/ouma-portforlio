@@ -59,8 +59,6 @@ const Blogs = () => {
 
   return (
     <div className="p-4">
-      <br />
-      <br />
       {selectedBlog ? (
         <div>
           <h2 className="text-2xl font-bold mb-4">{selectedBlog.title}</h2>

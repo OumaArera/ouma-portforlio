@@ -54,9 +54,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center p-6 md:p-10 lg:p-16 xl:p-20 mx-auto bg-white shadow-lg rounded-lg w-full max-w-6xl">
-      <br />
       <h1 className="text-2xl md:text-3xl font-semibold text-green-800 mb-6 text-center">Projects</h1>
-
       {/* Container for all project cards */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-full">
         {projects.map((project, index) => (
