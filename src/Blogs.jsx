@@ -61,6 +61,7 @@ const Blogs = () => {
     <div className="p-4">
       {selectedBlog ? (
         <div>
+          <br />
           <h2 className="text-2xl font-bold mb-4">{selectedBlog.title}</h2>
           <p className="mb-4">{selectedBlog.content}</p>
           {selectedBlog.videoUrl && (
