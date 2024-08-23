@@ -1,5 +1,6 @@
 import React from 'react';
 import insight from "./insight.png";
+import buildwork from "./buildwork.png"
 
 const Clients = () => {
   const clientDetails = [
@@ -8,9 +9,18 @@ const Clients = () => {
       location: "Harare, Zimbabwe",
       business: 'Psychotherapy Clinic',
       solution: 'The app connects patients with Insight Wellbeing P/L online, allowing doctors to monitor activities, provide prescriptions, and ensure data encryption for secure patient access.',
-      technologies: ['React', 'Flask', 'Postgresql'],
+      technologies: ['React', 'NodeJS', 'Postgresql'],
       websiteUrl: 'https://serenity-sandy.vercel.app/',
       imageUrl: insight,
+    },
+    {
+      name: 'BuildWork Constructors',
+      location: "Migori, Kenya",
+      business: 'Company websit',
+      solution: 'The app displays the company\'s services, and projects. The application provides an intuitive user interface that is very captivating.',
+      technologies: ['React', 'NodeJS', 'Postgresql'],
+      websiteUrl: 'https://buildwork.vercel.app/',
+      imageUrl: buildwork,
     }
   ];
 
