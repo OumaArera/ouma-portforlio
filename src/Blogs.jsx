@@ -94,14 +94,13 @@ const Blogs = () => {
         </div>
       ) : (
         <>
-        <br />
-        <br />
           <input
             type="text"
             placeholder="Search blogs..."
             value={searchTerm}
             onChange={handleSearchChange}
             className="border p-2 mb-8 w-full rounded" 
+            style={{ paddingTop: '90px' }}
           />
           <div>
             {paginatedBlogs.map((blog) => (
