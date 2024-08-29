@@ -10,12 +10,13 @@ import Clients from './Clients';
 import Services from './Services';
 import ServiceDetail from './ServiceDetail';
 import Blogs from './Blogs';
+import './App.css';
 
 const App = () => {
   return (
     <Router>
       <Header className="fixed top-0 left-0 w-full z-50" />
-      <div style={{ paddingTop: '90px' }} className="flex flex-col min-h-screen pt-16 md:pt-24">
+      <div style={{ paddingTop: '120px' }} className="flex flex-col min-h-screen pt-16 md:pt-24">
         <main className="flex-grow flex flex-col overflow-y-auto px-4">
           <Routes>
             <Route path="/" element={<Home />} />
