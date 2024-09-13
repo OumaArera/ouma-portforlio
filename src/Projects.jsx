@@ -2,11 +2,22 @@ import React from 'react';
 
 const projects = [
   {
+    title: "Arkad Family",
+    description: "The Arkad Family NGO website is a user-friendly platform that highlights the organization's mission, events, and activities, with interactive features like forms, feedback, and payment integration. An Admin Dashboard enables easy content management, ensuring the site remains up-to-date, while performance optimization and SEO enhance its visibility and speed.",
+    technologies: [
+      "Frontend: React, Tailwind CSS, Figma",
+      "Backend: NodeJS",
+      "Database: PostgreSQL",
+      "Security: JWT Tokens, OAuth"
+    ],
+    liveSite: "https://arkad.vercel.app/"
+  },
+  {
     title: "Serenity Pathways",
     description: "A web application for managing psychotherapy services with roles for admin, doctor, and patient, including features for activity monitoring and secure data access.",
     technologies: [
       "Frontend: React, JavaScript, Tailwind CSS, Figma",
-      "Backend: NodeJS, Python",
+      "Backend: Python",
       "Database: PostgreSQL",
       "Security: JWT Tokens"
     ],

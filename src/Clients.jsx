@@ -1,9 +1,19 @@
 import React from 'react';
 import insight from "./insight.png";
 import buildwork from "./buildwork.png"
+import arkad from './arkad.png';
 
 const Clients = () => {
   const clientDetails = [
+    {
+      name: 'Arkad Family',
+      location: "Kiambu County",
+      business: 'Web application and Admin dashboard',
+      solution: 'The app enables Arkad Family interact with their activities and events via the web app. ',
+      technologies: ['React', 'NodeJS', 'Postgresql'],
+      websiteUrl: 'https://arkad.vercel.app/',
+      imageUrl: arkad,
+    },
     {
       name: 'Serenity Pathways',
       location: "Harare, Zimbabwe",
