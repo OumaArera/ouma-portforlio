@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import OumaCV from './OumaCV.pdf';
+import OumaCV from './Ouma_John.pdf';
 import expertise from './expertise.jpg';
 import { FaPhone, FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
