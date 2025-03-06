@@ -64,10 +64,10 @@ const AboutMe = () => {
               <FaGithub className="mr-2" /> 
               <a href="https://github.com/OumaArera" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">GitHub</a>
             </p>
-            <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
+            {/* <p className="text-lg md:text-xl text-gray-700 mb-2 flex items-center justify-center">
               <FaLinkedin className="mr-2" /> 
               <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">LinkedIn</a>
-            </p>
+            </p> */}
           </div>
         </>
       )}
