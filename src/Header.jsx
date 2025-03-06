@@ -109,13 +109,13 @@ const Header = () => {
             >
               About
             </Link>
-            <Link 
+            {/* <Link 
               to="/blogs" 
               className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
               onClick={toggleMenu}
             >
               Blogs
-            </Link>
+            </Link> */}
             <Link 
               to="/skills" 
               className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
@@ -123,13 +123,13 @@ const Header = () => {
             >
               Skills
             </Link>
-            <Link 
+            {/* <Link 
               to="/projects" 
               className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
               onClick={toggleMenu}
             >
               Projects
-            </Link>
+            </Link> */}
             <Link 
               to="/clients" 
               className="block text-lg font-semibold text-gray-900 hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500" 
