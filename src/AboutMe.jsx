@@ -69,21 +69,6 @@ const AboutMe = () => {
               <a href="https://www.linkedin.com/in/john-ouma-66603b186/" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">LinkedIn</a>
             </p>
           </div>
-
-          {/* Resume Section */}
-          <div className="bg-white p-6 rounded-lg shadow-md w-full text-center border-t-4 border-gray-300">
-            <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-4">Resume</h2>
-            <div className="flex justify-center">
-              <a
-                href={OumaCV}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white bg-green-500 hover:bg-green-600 px-6 py-2 rounded-full"
-              >
-                Download Resume
-              </a>
-            </div>
-          </div>
         </>
       )}
     </div>

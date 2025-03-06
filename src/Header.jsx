@@ -58,9 +58,9 @@ const Header = () => {
           <Link to="/skills" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
             Skills
           </Link>
-          <Link to="/projects" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
+          {/* <Link to="/projects" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
             Projects
-          </Link>
+          </Link> */}
           <Link to="/clients" className="text-lg font-semibold hover:text-green-500 hover:underline hover:underline-offset-4 hover:decoration-green-500">
             Clients
           </Link>
