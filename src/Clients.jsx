@@ -2,9 +2,19 @@ import React from 'react';
 import insight from "./insight.png";
 import buildwork from "./buildwork.png"
 import arkad from './arkad.png';
+import edmonds from './edmonds.png';
 
 const Clients = () => {
   const clientDetails = [
+    {
+      name: '1st Edmonds AFH LLC & Bothel Serenity CORP',
+      location: "USA",
+      business: 'Adult Family Home',
+      solution: 'The application enables the company to manage daily administrative roles.',
+      technologies: ['React', 'Django', 'Postgresql'],
+      websiteUrl: 'https://edmondserenity.com/',
+      imageUrl: edmonds,
+    },
     {
       name: 'Arkad Family',
       location: "Kiambu County",
