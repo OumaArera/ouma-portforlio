@@ -15,9 +15,9 @@ const Footer = () => {
           <Link to="/services" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Services</Link>
           <Link to="/about" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">About</Link>
           <Link to="/clients" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Clients</Link>
-          <Link to="/blogs" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Blogs</Link>
+          {/* <Link to="/blogs" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Blogs</Link> */}
           <Link to="/skills" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Skills</Link>
-          <Link to="/projects" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Projects</Link>
+          {/* <Link to="/projects" className="mx-2 mb-2 text-sm hover:text-green-600 hover:underline">Projects</Link> */}
         </nav>
         <p className="text-white text-sm">
           © {getCurrentYear()} John Ouma. All rights reserved.
