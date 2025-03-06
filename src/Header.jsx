@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import portrait from "./portrait.jpg";
+import portrait from "./me.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
