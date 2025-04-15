@@ -3,6 +3,7 @@ import insight from "./insight.png";
 import buildwork from "./buildwork.png"
 import arkad from './arkad.png';
 import edmonds from './edmonds.png';
+import kduah from './kdua.png';
 
 const Clients = () => {
   const clientDetails = [
@@ -14,6 +15,15 @@ const Clients = () => {
       technologies: ['React', 'Django', 'Postgresql'],
       websiteUrl: 'https://edmondserenity.com/',
       imageUrl: edmonds,
+    },
+    {
+      name: 'KDUAH & DAVIDS CONSULT',
+      location: "USA",
+      business: 'Business Consultancy',
+      solution: 'The application enables the company to gain online presence',
+      technologies: ['React', 'Django', 'Postgresql'],
+      websiteUrl: 'https://kduah-david.vercel.app/',
+      imageUrl: kduah,
     },
     {
       name: 'Arkad Family',
